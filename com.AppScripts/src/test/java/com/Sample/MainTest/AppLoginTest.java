@@ -1,5 +1,6 @@
 package com.Sample.MainTest;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -31,6 +32,8 @@ public class AppLoginTest
     	driver.manage().window().maximize();
     	System.out.println("Maximizing screen");
     	
+    	driver.findElement(By.xpath("//*[@id=\"header\"]/ul/li[6]/a")).click();
+    	System.out.println("Clicking sample forms link");
     	
     	Thread.sleep(3000);
     	
