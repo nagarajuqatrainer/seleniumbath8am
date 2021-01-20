@@ -36,7 +36,7 @@ public class AppLoginTest
     	System.out.println("Clicking sample forms link");
     	
     	Thread.sleep(3000);
-    	
+    	System.out.println("Waiting page");
     	
     	driver.close();
     	System.out.println("Closing browser");
