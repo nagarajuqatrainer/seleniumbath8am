@@ -1,14 +1,23 @@
 package com.Sample.MainTest;
 
-import org.openqa.selenium.By;
+
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+
+import com.AppObjects.LoginAppObjects;
+import com.Sample.Utilities.AppBrowserFactory;
+import com.Sample.Utilities.ConfigReader;
 
 public class AppLoginTest 
 {
 	
 	public static WebDriver driver;
+	public static ConfigReader config;
+	public static AppBrowserFactory browser;
+	public static Properties prop;
+	public static LoginAppObjects login;
 	
 	// Run this test project from eclipse to jenkins
 	
@@ -16,29 +25,19 @@ public class AppLoginTest
     @Test
     public void logintest() throws Exception
     {
-      //If i wan to work with Git hub server>Download git exe>Install> copy the path from installation location
-    	//go to jenkins>go to configuretools>setpath in git location
+      
+    	browser=new AppBrowserFactory();
+    	prop=new Properties();
+    	config=new ConfigReader();
     	
-    	//open browser>go to github
     	
-    	
-    	System.setProperty("webdriver.chrome.driver", "./BrowserDrivers/chromedriver.exe");
-    	
-    	driver = new ChromeDriver();
-    	
-    	driver.get("https://www.mycontactform.com/samples.php");
+    	AppBrowserFactory.getbrowser(config.getchromebrowser(),config.getbrowserurl());
     	System.out.println("Launching browser");
     	
-    	driver.manage().window().maximize();
-    	System.out.println("Maximizing screen");
     	
     	
-    	
-    	Thread.sleep(3000);
-    	System.out.println("Waiting page");
-    	
-    	driver.close();
-    	System.out.println("Closing browser");
+    	AppBrowserFactory.closbrowser();
+    	System.out.println("Closing Browser");
     	
     }
 }
