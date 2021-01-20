@@ -2,20 +2,28 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-20T09:14:50 IST" name="Suite" finished-at="2021-01-20T09:15:02 IST" duration-ms="11354">
+  <suite started-at="2021-01-20T09:51:08 IST" name="Suite" finished-at="2021-01-20T09:51:19 IST" duration-ms="11061">
     <groups>
     </groups>
-    <test started-at="2021-01-20T09:14:50 IST" name="Test" finished-at="2021-01-20T09:15:02 IST" duration-ms="11354">
+    <test started-at="2021-01-20T09:51:08 IST" name="Test" finished-at="2021-01-20T09:51:19 IST" duration-ms="11061">
       <class name="com.Sample.MainTest.AppLoginTest">
-        <test-method signature="logintest()[pri:0, instance:com.Sample.MainTest.AppLoginTest@2525ff7e]" started-at="2021-01-20T09:14:50 IST" name="logintest" finished-at="2021-01-20T09:15:02 IST" duration-ms="11264" status="FAIL">
+        <test-method is-config="true" signature="appBase()[pri:0, instance:com.Sample.MainTest.AppLoginTest@355ce81c]" started-at="2021-01-20T09:51:08 IST" name="appBase" finished-at="2021-01-20T09:51:08 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appBase -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.Sample.MainTest.AppLoginTest@355ce81c]" started-at="2021-01-20T09:51:08 IST" name="launchBrowser" finished-at="2021-01-20T09:51:19 IST" duration-ms="10821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="logintest()[pri:0, instance:com.Sample.MainTest.AppLoginTest@355ce81c]" started-at="2021-01-20T09:51:19 IST" name="logintest" finished-at="2021-01-20T09:51:19 IST" duration-ms="27" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.AppObjects.LoginAppObjects.driver" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.AppObjects.AppObjects.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.AppObjects.LoginAppObjects.driver" is null
-at com.AppObjects.LoginAppObjects.verifyusername(LoginAppObjects.java:24)
-at com.Sample.MainTest.AppLoginTest.logintest(AppLoginTest.java:39)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.AppObjects.AppObjects.driver" is null
+at com.AppObjects.AppObjects.getusername(AppObjects.java:26)
+at com.Sample.MainTest.AppLoginTest.logintest(AppLoginTest.java:46)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,6 +58,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.Sample.MainTest.AppLoginTest@355ce81c]" started-at="2021-01-20T09:51:19 IST" name="closebrowser" finished-at="2021-01-20T09:51:19 IST" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
       </class> <!-- com.Sample.MainTest.AppLoginTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

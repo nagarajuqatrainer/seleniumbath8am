@@ -5,7 +5,10 @@
     <classes>
       <class name="com.Sample.MainTest.AppLoginTest">
         <methods>
+          <include name="closebrowser"/>
           <include name="logintest"/>
+          <include name="launchBrowser"/>
+          <include name="appBase"/>
         </methods>
       </class> <!-- com.Sample.MainTest.AppLoginTest -->
     </classes>

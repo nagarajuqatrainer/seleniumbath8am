@@ -130,9 +130,9 @@
                   <a name="logintest">
                   </a> <!-- logintest -->
                   <span class="method-name">logintest</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;com.AppObjects.LoginAppObjects.driver&quot; is null
-	at com.AppObjects.LoginAppObjects.verifyusername(LoginAppObjects.java:24)
-	at com.Sample.MainTest.AppLoginTest.logintest(AppLoginTest.java:39)
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;com.AppObjects.AppObjects.driver&quot; is null
+	at com.AppObjects.AppObjects.getusername(AppObjects.java:26)
+	at com.Sample.MainTest.AppLoginTest.logintest(AppLoginTest.java:46)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -196,12 +196,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'logintest')
 data.setCell(0, 2, 'com.Sample.MainTest.AppLoginTest')
-data.setCell(0, 3, 11264);
+data.setCell(0, 3, 27);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 27 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -228,12 +228,24 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.Sample.MainTest.AppLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">appBase</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">16 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">logintest</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">10897 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">10943 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
