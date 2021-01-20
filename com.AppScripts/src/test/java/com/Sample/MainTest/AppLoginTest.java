@@ -32,8 +32,7 @@ public class AppLoginTest
     	driver.manage().window().maximize();
     	System.out.println("Maximizing screen");
     	
-    	driver.findElement(By.xpath("//*[@id=\"header\"]/ul/li[6]/a")).click();
-    	System.out.println("Clicking sample forms link");
+    	
     	
     	Thread.sleep(3000);
     	System.out.println("Waiting page");
